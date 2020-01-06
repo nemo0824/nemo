@@ -2,7 +2,9 @@
 
 cnt=0
 
-while(("${cnt}" < 100)); do
- echo "${cnt}"
-   ((cnt = "${cnt}" + 1))
+for((i=1; i<=100; i++)); do
+ 
+   ((cnt = cnt+ $i))
+   echo "${cnt}"
 done
+
